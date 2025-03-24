@@ -1,10 +1,9 @@
-window.addEventListener("load", () => {
-  const tokenAddress = "0x0000000000000000000000000000000000000000"; // Replace later
+document.addEventListener("DOMContentLoaded", function () {
+  const tokenAddress = "0x0000000000000000000000000000000000000000"; // placeholder is fine
 
   function initUniswap() {
     if (window.Uniswap && window.Uniswap.SwapWidget) {
-      const swapWidget = window.Uniswap.SwapWidget;
-      swapWidget.init({
+      window.Uniswap.SwapWidget.init({
         theme: "dark",
         width: "100%",
         defaultInputToken: "NATIVE",
@@ -12,7 +11,7 @@ window.addEventListener("load", () => {
         container: "#swapWidget"
       });
     } else {
-      setTimeout(initUniswap, 500); // Retry if Uniswap not loaded yet
+      setTimeout(initUniswap, 300);
     }
   }
 
