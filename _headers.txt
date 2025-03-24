@@ -1,0 +1,4 @@
+/*
+
+  Content-Security-Policy: script-src 'self' https://unpkg.com 'unsafe-eval'; object-src 'none';
+
