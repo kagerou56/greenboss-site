@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const tokenAddress = "0x0000000000000000000000000000000000000000"; // placeholder is fine
+  const tokenAddress = "0x0000000000000000000000000000000000000000"; // Replace with real token when ready
 
   function initUniswap() {
     if (window.Uniswap && window.Uniswap.SwapWidget) {
