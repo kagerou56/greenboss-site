@@ -95,12 +95,35 @@
 
   <!-- 📈 Chart Section -->
 <section id="chart" style="padding: 60px 20px; background-color: #0a0a0a; color: #fff;">
-  <h2 style="text-align: center; margin-bottom: 30px;">📈 Live Chart</h2>
-  <iframe 
-    src="https://dexscreener.com/ethereum/0x0000000000000000000000000000000000000000" 
-    style="width:100%; height:600px; border:0; border-radius: 12px;" 
-    allowfullscreen
-  ></iframe>
+  <h2 style="text-align: center; margin-bottom: 30px;">📊 Live Price Chart</h2>
+
+  <style>
+    #dexscreener-embed {
+      position: relative;
+      width: 100%;
+      padding-bottom: 125%;
+    }
+    @media (min-width: 1400px) {
+      #dexscreener-embed {
+        padding-bottom: 65%;
+      }
+    }
+    #dexscreener-embed iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border: 0;
+    }
+  </style>
+
+  <div id="dexscreener-embed">
+    <iframe
+      src="https://dexscreener.com/ethereum/0x8F5Bb2B721574800234Ba3D079278ce70970b758?embed=1&loadChartSettings=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
+      allowfullscreen
+    ></iframe>
+  </div>
 </section>
 
   <!-- COMMUNITY -->
